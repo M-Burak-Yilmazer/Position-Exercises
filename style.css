@@ -1,21 +1,118 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
 /* **header */
-header img{
-    width:60px;
+header img {
+  width: 60px;
 }
-header{
-background-color: #D9AFD9;
-background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-padding:1rem;
-
+header {
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  padding: 1rem;
 }
-header .sign-in{
-    float:right;
-    padding-top:2rem;
+header .sign-in {
+  float: right;
+  padding-top: 2rem;
+  padding-right: 0.5rem;
+  color: #920101;
+}
+header .sign-in a {
+  color: #920101;
+  text-decoration: none;
+  /* font-size: 1.3rem; */
+  font-weight: 800;
+}
+header .sign-in a:hover {
+  border-bottom: 2px solid #920101;
+}
 
- 
+nav.sticky {
+  padding: 2rem;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  text-align: center;
+  position:sticky;
+  top:0;
+  z-index: 100;
+}
+nav.sticky a {
+  font-family: "DynaPuff", cursive;
+  text-decoration: none;
+  margin-right: 0.8rem;
+  font-weight: 500;
+}
+nav.sticky a:hover {
+  color: white;
+}
+/* !!!banner */
+nav.banner {
+  position: relative;
+  line-height: 3rem;
+}
+nav.banner img {
+  width: 100%;
+  max-height: calc(100vh - 202px);
+}
+nav.banner .hero {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  /* transform: translate(-50%,-50%); */
+}
+nav.banner h2 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 2px 4px black;
+}
+nav.banner h3 {
+  color: red;
+  font-size: 1rem;
+  text-shadow: 0 2px 4px black;
+  background-color: ;
+}
+nav.banner button {
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: #d9afd9;
+}
+nav.banner button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* *****Main */
+main {
+  padding: 2rem;
+  text-align: justify;
+}
+
+.slack {
+  font-size: 2rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #920101d6;
+  width: 3rem;
+  height: 3rem;
+  color: rgba(255, 255, 255, 0.829);
+  border-radius: 50%;
+  text-align: center;
+  /* display:flex;
+    justify-content: center;
+    align-items:center; */
+}
+.slack:hover{
+    cursor:pointer;
+    outline:2px solid #920101;
+    outline-offset:3px;
+    color:black;
+
 }
